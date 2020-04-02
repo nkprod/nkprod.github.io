@@ -2070,6 +2070,7 @@ input, select, textarea {
      content : attr(data-tooltip);
 	 opacity : 0;
 	 top:55%;
+	 font-size: 0.7rem
 	 
 }
 
