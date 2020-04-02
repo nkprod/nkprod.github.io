@@ -1273,7 +1273,7 @@ input, select, textarea {
 			margin-top: 3.5rem;
 		}
 
-			#header > *:before {
+			/* #header > *:before {
 				content: '';
 				display: block;
 				position: absolute;
@@ -1282,7 +1282,7 @@ input, select, textarea {
 				width: 1px;
 				height: calc(3.5rem + 1px);
 				background: #ffffff;
-			}
+			} */
 
 		#header > :first-child {
 			margin-top: 0;
@@ -1305,10 +1305,10 @@ input, select, textarea {
 			}
 
 		#header .content {
-			border-style: solid;
-			border-color: #ffffff;
+			/* border-style: solid; */
+			/* border-color: #ffffff;
 			border-top-width: 1px;
-			border-bottom-width: 1px;
+			border-bottom-width: 1px; */
 			max-width: 100%;
 		}
 
@@ -1736,4 +1736,346 @@ input, select, textarea {
     line-height:35px;
     color:#444;
     color:rgba(0, 0, 0, 0.4);
+}
+/*Carousel*/
+/* .carousel {
+	margin: 20px;
+  }
+  .carousel__view {
+	width: calc((20%*4) + 22px);
+	height: 22vh;
+	background: white;
+	box-shadow: 0 1px 8px #888888;
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+  }
+  .carousel__control {
+	position: absolute;
+	z-index: 1;
+	height: 22vh;
+	width: 70px;
+	background-color: rgba(221, 221, 221, 0.5);
+	transition: background-color .3s;
+	display: table;
+  }
+  .carousel__control .icon {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+  }
+  .carousel__control:hover {
+	background-color: rgba(221, 221, 221, 0.8);
+  }
+  .carousel__control:first-of-type {
+	left: 0;
+  }
+  .carousel__control:last-of-type {
+	right: 0;
+  }
+  
+  .product-list {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	transition: transform .3s;
+	transform: translateX(0px);
+	list-style: none;
+	height: 30%;
+  }
+  .product-list__item {
+	width: 16.6%;
+	height: 300px;
+	display: inline-block;
+  }
+  
+  .product {
+	display: table;
+	height: 100%;
+	width: 100%;
+  }
+  .product span {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	color: white;
+	font-size: 50px;
+  }
+  /* .product[data-slide="1"] {
+	background-color: blue;
+  }
+  .product[data-slide="2"] {
+	background-color: green;
+  }
+  .product[data-slide="3"] {
+	background-color: yellow;
+  }
+  .product[data-slide="4"] {
+	background-color: orange;
+  }
+  .product[data-slide="5"] {
+	background-color: red;
+  }
+  .product[data-slide="6"] {
+	background-color: pink;
+  /* }
+  .carousel-image{
+	  width:100%;
+	  height:auto;
+	  align:center;
+  } */ 
+
+  /*Card Images for projects*/
+  .noselect {
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+		-ms-user-select: none;
+			user-select: none;
+  }
+  
+  @-webkit-keyframes beat {
+	to {
+	  -webkit-transform: scale(1.4);
+			  transform: scale(1.4);
+	}
+  }
+  
+  @keyframes beat {
+	to {
+	  -webkit-transform: scale(1.4);
+			  transform: scale(1.4);
+	}
+  }
+/* Card Images for the first projet*/
+
+  .artboard1 .cards1 {
+	text-align: center;
+	min-height: 40vh;
+	overflow: hidden;
+	display: -webkit-box;
+	display: flex;
+	border-radius: 10% / 50%;
+  }
+  .artboard1 .cards1 .card1 {
+	min-width: calc(20%);
+	min-height: 100%;
+	text-align: center;
+	background-size: content;
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+	-webkit-transition: 500ms cubic-bezier(1, 0.02, 0, 0.98);
+	transition: 500ms cubic-bezier(1, 0.02, 0, 0.98);
+	vertical-align: middle;
+	border: 1px solid black;
+    background-color: antiquewhite;
+    -webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));
+    filter: url(#drop-shadow)
+  }
+  .artboard1 .cards1 .card1 a {
+	font-family: "Satisfy", cursive;
+	font-size: 2em;
+	text-transform: capitalize;
+	vertical-align: middle;
+	text-align: center;
+	position: relative;
+	top: 80%;
+	-webkit-transition: 250ms cubic-bezier(1, 0.02, 0, 0.98);
+	transition: 250ms cubic-bezier(1, 0.02, 0, 0.98);
+  }
+
+/* Card Images for the second projet*/
+
+.artboard2 .cards2 {
+	text-align: center;
+	min-height: 40vh;
+	overflow: hidden;
+	display: -webkit-box;
+	display: flex;
+	border-radius: 10% / 50%;
+}
+
+  .artboard2 .cards2 .card2 {
+	min-width: calc(20%);
+	min-height: 100%;
+	text-align: center;
+	background-size: content;
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+	-webkit-transition: 500ms cubic-bezier(1, 0.02, 0, 0.98);
+	transition: 500ms cubic-bezier(1, 0.02, 0, 0.98);
+	vertical-align: middle;
+	border: 1px solid black;
+    background-color: antiquewhite;
+    -webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));
+    filter: url(#drop-shadow)
+  }
+  .artboard2 .cards2 .card2 a {
+	font-family: "Satisfy", cursive;
+	font-size: 2em;
+	text-transform: capitalize;
+	vertical-align: middle;
+	text-align: center;
+	position: relative;
+	top: 80%;
+	-webkit-transition: 250ms cubic-bezier(1, 0.02, 0, 0.98);
+	transition: 250ms cubic-bezier(1, 0.02, 0, 0.98);
+  }
+/* Card Images for the third projet*/
+
+.artboard3 .cards3 {
+	text-align: center;
+	min-height: 40vh;
+	overflow: hidden;
+	display: -webkit-box;
+	display: flex;
+	border-radius: 10% / 50%;
+  }
+  .artboard3 .cards3 .card3 {
+	min-width: calc(25%);
+	min-height: 100%;
+	text-align: center;
+	background-size: content;
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+	-webkit-transition: 500ms cubic-bezier(1, 0.02, 0, 0.98);
+	transition: 500ms cubic-bezier(1, 0.02, 0, 0.98);
+	vertical-align: middle;
+	border: 1px solid black;
+    background-color: antiquewhite ;
+    -webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));
+    filter: url(#drop-shadow)
+  }
+  .artboard3 .cards3 .card3 a {
+	font-family: "Satisfy", cursive;
+	font-size: 2em;
+	text-transform: capitalize;
+	vertical-align: middle;
+	text-align: center;
+	position: relative;
+	top: 80%;
+	-webkit-transition: 250ms cubic-bezier(1, 0.02, 0, 0.98);
+	transition: 250ms cubic-bezier(1, 0.02, 0, 0.98);
+  }
+
+
+
+  .artboard1 .p1 {
+	background: url(../../images/QuizzingApp_1.png);
+	background-size: contain;
+  }
+  .artboard1 .p2 {
+	background: url(../../images/QuizzingApp_2.png);
+	background-size: contain;
+  }
+  .artboard1 .p3 {
+	background: url(../../images/QuizzingApp_3.png);
+	background-size: contain;
+  }
+  .artboard1 .p4 {
+	background: url(../../images/QuizzingApp_4.png);
+	background-size: contain;
+  }
+  .artboard1 .p5 {
+	background: url(../../images/QuizzingApp_5.png);
+	background-size: contain;
+  }
+
+  .artboard2 .p6 {
+	background: url(../../images/findmypuppy_1.png);
+	background-size: contain;
+  }
+  .artboard2 .p7 {
+	background: url(../../images/findmypuppy_2.png);
+	background-size: contain;
+  }
+  .artboard2 .p8 {
+	background: url(../../images/findmypuppy_3.png);
+	background-size: contain;
+  }
+  .artboard2 .p9 {
+	background: url(../../images/findmypuppy_4.png);
+	background-size: contain;
+  }
+  .artboard2 .p10 {
+	background: url(../../images/findmypuppy_5.png);
+	background-size: contain;
+  }
+
+  .artboard3 .p11 {
+	background: url(../../images/autoinfo_1.png);
+	background-size: contain;
+  }
+  .artboard3 .p12 {
+	background: url(../../images/autoinfo_2.png);
+	background-size: contain;
+  }
+  .artboard3 .p13 {
+	background: url(../../images/autoinfo_3.png);
+	background-size: contain;
+  }
+  .artboard3 .p14 {
+	background: url(../../images/autoinfo_4.png);
+	background-size: contain;
+  }
+
+  
+  
+  .open_card {
+	min-width: 100% !important;
+  }
+  .open_card a {
+	top: 100% !important;
+  }
+  
+  .close_card {
+	min-width: 0% !important;
+  }
+  .close_card a {
+	top: -50% !important;
+  }
+  
+  .project-description{
+	padding:10%;
+  }
+  .project-essentials{
+	text-align:center;
+  }
+  .profile-picture{
+	width:50%;
+	height:auto;
+	float: left;
+	display: inline-block;
+	box-sizing: border-box;
+	margin-right: 5%;
+	border-top-left-radius: 2%;
+	border-bottom-right-radius: 2%;
+	border: 5px solid;
+  
+  }
+  .profile-description{
+	box-sizing: border-box;
+	padding: 10%;
+	background-color: #162c48;
+	border-radius: 2%;
+	height: auto;
+	border: 5px solid;
+  }
+
+
+  [data-tooltip]:before {            
+    position : absolute;
+     content : attr(data-tooltip);
+	 opacity : 0;
+	 top:55%;
+	 
+}
+
+[data-tooltip]:hover:before {        
+    opacity : 1;
+}
+[data-tooltip]:not([data-tooltip-persistent]):before {
+    pointer-events: none;
 }
